@@ -1,0 +1,12 @@
+
+
+@mixin condicion ($color){
+    background-color: $color;
+    @if $color ==orange{
+        border-radius: 10px;
+        padding: 20px 10px;
+    } @else{
+        border-radius: 2px;
+        padding: 10px};
+    }
+}

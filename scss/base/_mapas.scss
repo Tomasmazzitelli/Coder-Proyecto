@@ -1,0 +1,21 @@
+
+
+
+
+$perfil-standard: (
+    bg-color-standard: gray,
+    border-standard: 1px solid black,
+    font-standard: 2rem;)
+
+$perfil-premium:(
+    bg-color-standard: yellow,
+    border-standard: 1px solid black,
+    font-standard: 2rem;)
+
+#standard{
+    background-color: map-get($map: $perfil-standard, $key: font-standard);
+}
+  
+#premium{
+    font-size: map-get($map: $perfil-premium, $key:font-premium );
+}

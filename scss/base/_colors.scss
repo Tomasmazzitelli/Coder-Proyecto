@@ -1,0 +1,11 @@
+$rojo: #900;
+$verde: #090;
+
+.border-menu {
+    border-bottom: 1px solid darken($color: #333000, $rojo: 20%);
+}
+
+.border-menu {
+    border-bottom: 1px solid darken($color: #333000, $verde: 20%);
+
+}
