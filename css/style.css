@@ -1,22 +1,207 @@
-/* Error: Missing argument $amount.
- *   ,--> scss\base\_colors.scss
- * 5 |     border-bottom: 1px solid darken($color: #333000, $rojo: 20%);
- *   |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
- *   '
- *   ,--> sass:color
- * 1 | @function darken($color, $amount) {
- *   |           ======================= declaration
- *   '
- *   scss\base\_colors.scss 5:30  @import
- *   scss\style.scss 210:8        root stylesheet */
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Missing argument $amount.\a   \250c \2500 \2500 > scss\\base\\_colors.scss\a 5 \2502      border-bottom: 1px solid darken($color: #333000, $rojo: 20%);\d\a   \2502                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a   \2575 \a   \250c \2500 \2500 > sass:color\a 1 \2502  @function darken($color, $amount) {\a   \2502            \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a   \2575 \a   scss\\base\\_colors.scss 5:30  @import\a   scss\\style.scss 210:8        root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.divnav {
+  background-color: #010031;
+}
+
+.imagennav {
+  float: left;
+  margin-left: 40px;
+  height: 10%;
+  width: 10%;
+  margin: 0px;
+  padding-bottom: 5px;
+  transition: 0.5s ease;
+}
+
+.titulo {
+  transition: 0.5s ease;
+}
+
+.titulo:hover {
+  box-shadow: 0 0 0 10px #000000;
+  transition: 0.5s ease;
+}
+
+.imagennav:hover {
+  box-shadow: 0 0 0 10px #000000;
+  transition: 0.5s ease;
+}
+
+body {
+  background-color: #010031;
+}
+
+.barradenav {
+  background-color: #010031;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 30px;
+  width: 100%;
+}
+
+.barradenav:hover {
+  background-color: rgb(58, 25, 143);
+}
+
+.imagenp {
+  display: flex;
+  justify-content: center;
+}
+
+.imagenp:hover {
+  text-shadow: 0 0 30px #fff;
+  box-shadow: 0 0 20px rgb(3, 9, 5);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.imaa {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background-attachment: fixed;
+  height: 90%;
+  width: 95%;
+}
+
+li a {
+  color: aliceblue;
+}
+
+ul {
+  background-color: rgb(255, 255, 255);
+  text-decoration: solid;
+  text-overflow: ellipsis;
+}
+
+ul li {
+  padding-bottom: 25px;
+  padding-right: 90px;
+  padding-left: 90px;
+  font-style: italic;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding-left: 30px;
+  justify-content: center;
+  font-size: 2em;
+  padding-top: 45px;
+}
+
+.pasaje {
+  height: 500px;
+  color: rgb(209, 20, 20);
+  backface-visibility: hidden;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.parrafo {
+  color: rgb(250, 248, 248);
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(78, 78, 214);
+}
+
+.redes:hover {
+  text-shadow: 0 0 30px #fff;
+  box-shadow: 0 0 20px rgb(3, 9, 5);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.instagram {
+  height: 200px;
+  width: 200px;
+}
+
+.face {
+  height: 200px;
+  width: 200px;
+}
+
+.wpp {
+  height: 200px;
+  width: 200px;
+}
+
+.instagram:hover {
+  text-shadow: 0 0 30px #fff;
+  box-shadow: 0 0 20px rgb(3, 9, 5);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.face:hover {
+  text-shadow: 0 0 30px #fff;
+  box-shadow: 0 0 20px rgb(3, 9, 5);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.wpp:hover {
+  text-shadow: 0 0 30px #fff;
+  box-shadow: 0 0 20px rgb(3, 9, 5);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.box-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+.galeria {
+  background-color: #010031;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.disp {
+  height: 396px;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cielo {
+  height: 433px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comidas {
+  width: 800px;
+  height: 411px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  font-style: italic;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: white;
 }
